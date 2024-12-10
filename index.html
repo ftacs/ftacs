@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTA channels stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color for better contrast */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #1c1c1c; /* Slightly lighter background for header */
+            border-bottom: 1px solid #333;
+        }
+
+        header img {
+            height: 50px; /* Ensure the image fits nicely */
+            margin-right: 15px; /* Space between image and text */
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .movie-poster {
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Softer shadow for dark background */
+            background: #1c1c1c; /* Dark gray for card background */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #333; /* Border to separate image and info */
+        }
+
+        .movie-info {
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .movie-info h2 {
+            font-size: 1.2rem;
+            margin: 10px 0 5px;
+            color: #fff; /* Keep text white */
+        }
+
+        .movie-info p {
+            font-size: 1rem;
+            margin: 0;
+            color: #bbb; /* Slightly lighter gray for description */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="fta.png" alt="FTA Logo">
+        <h1>FTA Channels stream</h1>
+    </header>
+    <div class="container">
+        <div class="movie-poster" onclick="window.location.href='ssc1.html'">
+            <img src="webpa/ssc1.webp" alt="SSC 1">
+            <div class="movie-info">
+                <h2>SSC 1</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='ssc2.html'">
+            <img src="webpa/ssc2.webp" alt="SSC 2">
+            <div class="movie-info">
+                <h2>SSC 2</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='ssc3.html'">
+            <img src="webpa/ssc3.webp" alt="SSC 3">
+            <div class="movie-info">
+                <h2>SSC 3</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='ssc4.html'">
+            <img src="webpa/ssc4.webp" alt="SSC 4">
+            <div class="movie-info">
+                <h2>SSC 4</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='ssc5.html'">
+            <img src="webpa/ssc5.webp" alt="SSC 5">
+            <div class="movie-info">
+                <h2>SSC 5</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='sscex1.html'">
+            <img src="webpa/sscex1.webp" alt="SSC Extra 1">
+            <div class="movie-info">
+                <h2>SSC Extra 1</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='sscex2.html'">
+            <img src="webpa/sscex2.webp" alt="SSC Extra 2">
+            <div class="movie-info">
+                <h2>SSC Extra 2</h2>
+            </div>
+        </div>
+        <div class="movie-poster" onclick="window.location.href='sscex3.html'">
+            <img src="webpa/sscex3.webp" alt="SSC Extra 3">
+            <div class="movie-info">
+                <h2>SSC Extra 3</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
